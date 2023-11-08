@@ -1,0 +1,44 @@
+<!-- {{projects |json}} -->
+<div class="container-fluid">
+<div class="container">
+    <h2 class="my-4">Add project details</h2>
+    <div class="row">
+    <div class="form-floating mb-3 w-25">
+        <input [(ngModel)]="projects.id" name="id" type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput" class="ms-3">Project ID</label>
+      </div>
+      <div class="form-floating mb-3 w-50">
+        <input [(ngModel)]="projects.projectTitle" name="projectTitle" type="text" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword" class="ms-3">Project Title</label>
+      </div>
+    </div>
+    <div class="row">
+          <div class="form-floating w-50">
+            <select [(ngModel)]="projects.visibleId" name="visibleId" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected hidden disabled>{{projects.visibleId}}</option>
+              <option [value]="visible.id" *ngFor="let visible of visibilities">{{visible.name}}</option>
+            </select>
+            <label for="floatingSelect" class="ms-3">Visibility</label>
+          </div>
+          <div class="form-floating mb-3 w-25">
+            <input [(ngModel)]="projects.date" name="date" type="date" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword" class="ms-3"></label>
+          </div>
+        </div> 
+    <div class="row">
+        <div class="form-floating mb-3 w-100">
+            <input [(ngModel)]="projects.description" name="description" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="ms-3">Description</label>
+          </div>
+    </div>
+    <div class="row px-3">
+        <div class="form-floating mb-3 p-3 w-100 overflow-scroll">
+            <textarea [(ngModel)]="projects.code" name="code" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
+            <label for="floatingTextarea2" class="ms-3">Code</label>
+          </div>
+    </div>
+    <div class="row mb-3 w-100" style="display: flex; justify-content: center;">
+        <button (click)="addProject()" routerLink="/GetStarted/Projects" type="button" class="btn btn-info" style="width: 200px;"><i class="fa-solid fa-cloud-arrow-up"></i> Upload project</button>
+    </div>
+</div>
+</div>

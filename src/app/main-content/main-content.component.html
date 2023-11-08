@@ -1,0 +1,22 @@
+<div class="container-fluid">
+<div class="container py-4">
+      <h2 class="my-4">Popular projects</h2>
+    <div class="row">
+      <input type="search" class="form-control border border-1 border-primary mb-3" placeholder="Search projects">
+    </div>
+      <div class="card w-100 mb-3" *ngFor="let project of allProjects">
+        <div class="card-body">
+          <div style="display: flex;" id="head">
+            <a routerLink="viewProject/{{project.id}}" style="text-decoration: none;"><h5 class="card-title">{{project.id}} - {{project.projectTitle}}</h5></a>
+            <!-- <p class="ms-2 border border-1 border-dark">{{project.visibleId}}</p> -->
+          </div>
+          <p class="card-text"><span>{{project.description}}</span>
+            <span style="float: right; font-family: 'Edu SA Beginner', cursive;" class="m-3">Created:  {{project.date}}</span></p>
+          <a href="#" (click)="deleteProject(project.id)" routerLink="/GetStarted/Projects" class="btn btn-danger" id="viewBtn"><i class="fa-solid fa-trash"></i> Delete project</a>
+          <a href="#" class="btn ms-1" routerLink="/GetStarted/Projects"><i class="fa-solid fa-thumbtack"></i></a>
+        </div>
+      </div>
+      <div class="row" id="fixDiv">
+        <button id="addBtn" routerLink="addproject" class="btn btn-info"><i class="fa-solid fa-circle-plus"></i> Add project</button>
+      </div>
+    

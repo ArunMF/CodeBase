@@ -1,0 +1,8 @@
+.container-fluid{
+    background-image: url(https://atlanticresearchgroup.com/wp-content/uploads/2023/04/your-study-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input,select,textarea,button{
+    box-shadow: 0.5px 0.5px 10px rgb(185, 185, 185);
+}

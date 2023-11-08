@@ -1,0 +1,18 @@
+.container-fluid{
+    background-color: rgba(255, 255, 255, 0.897);
+}
+a{
+    font-family: 'Righteous', cursive;
+    font-size: 45px;
+    color: rgb(7, 0, 75);
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(0, 195, 255);
+}
+img{
+    height: 45px;
+    width: 60px;
+}
+button{
+    padding: 20px;
+    font-size: 20px;
+}

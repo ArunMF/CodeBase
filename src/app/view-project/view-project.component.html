@@ -1,0 +1,22 @@
+<div class="container p-2 my-3 border border-1 rounded">
+    <div class="row w-100" id="head">
+        <p id="projId" class="text-warning" style="font-size: 20px;">#Project ID : {{projectId}}</p>
+        <div style="display: flex;" id="heading">
+            <h4 class="card-title">{{project.projectTitle}}</h4>
+            <p class="ms-2 border border-1 border-dark" id="visibility">{{visibleName}}</p>
+        </div>
+       <p>{{project.description}}</p>
+    </div>
+    
+    <div class="row border border-1 mt-1 p-3 w-100 rounded" id="source">
+        Source code:
+            <textarea class="overflow-scroll mt-1" style="height: 300px;" readonly>{{project.code}}</textarea>
+        </div>
+        <div class="row mt-3 w-100" id="date">
+            <p style="font-family: 'Edu SA Beginner', cursive; font-size: 15px;" class="w-100">Created on {{project.date}}</p>
+        </div>
+    </div>
+    <div class="row mb-3 w-100" style="display: flex; justify-content: center;">
+        <button type="button" class="btn btn-info me-2" style="width: 200px;" routerLink="/GetStarted/Projects/editProject/{{project.id}}"><i class="fa-solid fa-pen-to-square"></i> Edit project</button>
+        <button type="button" class="btn btn-dark" style="width: 200px;" routerLink="/GetStarted/Projects">Back to Home</button>
+    </div>

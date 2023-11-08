@@ -1,0 +1,40 @@
+.container-fluid{
+    background-image: url(https://th.bing.com/th/id/R.68714b9e42768c779549fc59a2aacb4b?rik=vQ1L7qMf2wU1Eg&riu=http%3a%2f%2fwww.bypeople.com%2fwp-content%2fuploads%2f2014%2f05%2flight-live-background-css.jpg&ehk=f3DN275nadLF99LPBEykgtmBNK7iTJ0wfdyaT0228O0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h5{
+    font-family: 'Tilt Neon', cursive;
+}
+.card{
+    box-shadow: 1px 1px 10px grey;
+}
+.card #head .card-title{
+    font-weight: 800;
+}
+.card #head p{
+    background-color: rgb(226, 226, 226);
+    font-size: 12px;
+    text-align: center;
+    width: 60px;
+    height: 17px;
+    border-radius: 50px;
+    font-weight: 600;
+    float: right;
+}
+/* .card a#viewBtn{
+    width: 150px;
+} */
+#fixDiv{
+    position: fixed;
+    top: 570px;
+    width: 1100px;
+    z-index: 1;
+    display: flex;
+    left: 1100px;
+}
+button#addBtn{
+    width: 150px; 
+    font-weight: 600;
+    box-shadow: 3px 3px 10px black;
+}

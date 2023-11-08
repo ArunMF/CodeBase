@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Quattrocento+Sans:wght@700&family=Righteous&family=Tilt+Neon&display=swap');
+*{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+h1,h2,h4{
+    font-family: 'Righteous', cursive;
+}
+h3{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
